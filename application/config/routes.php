@@ -2,27 +2,27 @@
 
 return [
 	
-	'MyProjectLive/index.php'=> [
+	'MVC-framework/index.php'=> [
 		'controller' => 'main',
 		'action' => 'index',
 	],
 	
-	'MyProjectLive/main/contact'=> [
+	'MVC-framework/main/contact'=> [
 		'controller' => 'main',
 		'action' => 'contact',
 	],
 
-	'MyProjectLive/account/login' => [
+	'MVC-framework/account/login' => [
 		'controller' => 'account',
 		'action' => 'login',
 	],
 
-	'MyProjectLive/account/register' => [
+	'MVC-framework/account/register' => [
 		'controller' => 'account',
 		'action' => 'register',
 	],	
 	
-	'MyProjectLive/news/show' => [
+	'MVC-framework/news/show' => [
 		'controller' => 'news',
 		'action' => 'show',
 	],
