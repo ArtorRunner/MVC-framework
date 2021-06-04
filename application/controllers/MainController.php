@@ -8,15 +8,11 @@ class MainController extends Controller
 {
 	public function IndexAction()
 	{
-		$this->view->render('Главная страница');
-		$db = new Db;
-		
-		$params = [
-			'id' => 2,
+		$result = $this->model->getNews();
+		$vars = [
+			'news' => $result,
 		];
-
-		$data = $db->column('SELECT name FROM users WHERE id = :id', $params);
-		debug($data);
+		$this->view->render('Главная страница', $vars);
 	}
 	
 }
